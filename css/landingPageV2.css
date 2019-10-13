@@ -2,68 +2,81 @@ body {
   background-image: url("./assets/bg_001.jpg");
   background-attachment: fixed;
   background-size: cover;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0% 10%;
   font-family: 'Work Sans', sans-serif;
   color: white;
 }
 
-/*          NAVIGATION */
-.logo {}
+                    /* nav */
 
 nav {
   display: flex;
+  margin: auto;
   justify-content: space-around;
-  align-content: center;
 }
 
 nav ul {
   list-style-type: none;
+  display: inline;
 }
 
 nav ul li {
   text-transform: uppercase;
   display: inline-block;
-  padding: 20px 20px;
   font-weight: bold;
+  padding: 10px;
+}
+
+.icon {
+  position: relative;
+  left: 50px;
+}
+a:link {
+  text-decoration: none;
   color: white;
 }
 
-/*            CONTENT */
+a:visited {
+  color: white;
+}
+
+nav a:hover {
+  color: #4CAF50;
+}
+
+                    /* content */
 .content {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  margin-top: 55px;
+  margin-top: 30px;
   align-items: center;
-  min-height: 200px;
 }
 
 .content>div {
   display: inline;
 }
 
-/*                  -TEXT */
+                    /* text */
 h1 {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .txt {
   flex-flow: column;
+  width: 400px;
 }
 
-* < .txt {
-  width: 150px;
-  display: inline;
-  padding: 150px;
+.txt p {
+  text-align: justify;
+  line-height: 1.3em;
 }
 
 /*               -IMAGES */
 .pic {
   position: relative;
-  width: 100px;
+  width: 50px;
   height: auto;
-  /* display: flex; */
 }
 
 .p1, .p2 {
@@ -71,19 +84,18 @@ h1 {
 }
 
 .p1 {
-  top: -175px;
+  top: -150px;
   right: 60px;
   z-index: 2;
 }
 
 .p2 {
-  top: -190px;
-  right: -150px;
+  top: -130px;
+  right: -50px;
 }
 
-/* i just found the parent selector */
 img {
-  width: 250px;
+  width: 150px;
   height: auto;
 }
 
@@ -95,7 +107,7 @@ button {
   padding: 5px;
   border: 0px;
   border-radius: 5px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   align-items: center;
   color: white;
   font-size: 15px;
@@ -103,9 +115,17 @@ button {
 }
 
 .btn1 {
-  background-color: green;
+  background-color: #4CAF50;
+}
+
+.btn1:hover {
+  background-color: #3e8e41;
 }
 
 .btn2 {
-  background-color: blue;
+  background-color: #008CBA;
+}
+
+.btn2:hover {
+  background-color: #007399;
 }
